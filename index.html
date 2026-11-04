@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe Hero Section</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url(https://images.stripeassets.com/fzn2n1nzq965/115d4Vd5LVAsqFGDR1ClAv/0ceb2c44a7a7182cd624262420af7544/wave-fallback-desktop.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;
+            background-color: whitesmoke;
+        }
+        header {
+            margin: 1px 2%;
+            padding: 5px 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header:hover {
+            background-color: white;
+            border-radius: 10px;
+        }
+        header:hover .btn1 {
+            border: 1px solid rgb(0, 0, 225, 0.1)
+            
+        }
+        .left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .left nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;
+            font-size: small;
+        }
+        .left nav ul li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-weight: 500;
+        }
+        .left nav ul li span {
+            font-weight: 700;
+            padding-bottom: 8px;
+            padding-left: 5px;
+            font-size: small;
+        }
+        .left nav ul li b {
+            font-weight: 700;
+            padding-top: 8px;
+            padding-left: 5px;
+            font-size: small;
+            display: none;
+        }
+        .left img {
+            width: 60px;
+            height: 30px;
+        }
+        .right {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+        }
+        .btn1 {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: white;
+            border: none;
+            color: orange;
+            font-weight: 700;
+        }
+        .btn2 {
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: blue;
+            border: none;
+            color: white;
+            font-weight: 700;
+        }
+        header.btn1:hover {
+            border: 1px solid blue;
+            color: blue;
+        }
+        .btn2 span {
+            font-weight: 700;
+            font-size: medium;
+            margin-left: 5px;
+           }
+           .right b {
+            font-weight: 700;
+            font-size: large;
+            margin-left: 5px;
+            display: none;
+           }
+           .btn2:hover span{
+            display: none;
+           }
+           .btn2:hover b {
+            display: inline;
+           }
+           .cont1 {
+            width: 95%;
+            height: 70vh;
+            background-color: white;
+            margin: 2px 2%;
+            top: 60px;
+            position: absolute;
+            display: none;
+           }
+           .menu1:hover span {
+            display: none;
+           }
+           .menu1:hover span b {
+            display: block;
+           }
+           header .menu1:hover + .cont1 {
+            display: block;
+            left: 0px;
+           }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Stripe_logo%2C_revised_2014.png" alt="Stripe">
+            <nav>
+                <ul>
+                    <li class="menu1">Products <span>&#8964;</span><b>&#8963;</b></li>
+                    <li class="menu2">Solutions <span>&#8964;</span><b>&#8963;</b></li>
+                    <li class="menu3">Developers <span>&#8964;</span><b>&#8963;</b></li>
+                    <li class="menu4">Resources <span>&#8964;</span><b>&#8963;</b></li>
+                    <li>Pricing</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn1">Sign in </button>
+            <button class="btn2">Contact sales <span>&gt;</span><b>&rarr;</b></button>
+        </div>
+    </header>
+    <div class="cont1">
+
+    </div>
+    <div class="cont2">
+
+    </div>
+</body>
+</html>
